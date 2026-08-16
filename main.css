@@ -1,0 +1,91 @@
+
+/* DEFINIÇÃO DE VARIÁVEIS GLOBAIS (serão acessadas com o Java Script, no arquivo "app.js") */
+:root {
+  --green: #00FF00;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+
+/* BODY (PROPRIEDADES DO CORPO DO HTML) PS: Foi substituído pelo bloco de código "*" (mais à frente)
+body {
+  font-family: monospace;}   /* É semelhante a um dicionário python, onde temos um par de chave-valor */
+
+/* Aqui no "body" tínhamos a "família de fontes" que usaríamos em nossa página web! */
+
+
+
+* {
+  color: var(--fontColor);
+  font-family: Helvetica;
+}
+body {
+  background: var(--bg);
+} 
+/* O seletor " * " é universal e se aplica a todos os elementos da página
+  (exceto quando um seletor de elemento mais específico o substitui)
+
+
+
+
+/* ul (PROPRIEDADES DOS ELEMENTOS DE LISTAS NÃO ORDENADAS) */
+ul {
+  font-family: Helvetica;  /* "font-family" é a propriedade; e "Helvetica" é o estilo (valor) */
+}
+
+
+
+/* DEFINIÇÃO DO ESTILO DA CLASSE "list" (marcadores de tópicos), QUE CRIAMOS NO HTML */
+li { 
+  list-style: circle;
+}
+/* OBS: CLASSES DEFINEM O ESTILO PARA VÁRIOS ELEMENTOS */
+.list {
+  list-style: square;
+}
+
+
+
+/* DEFINIÇÃO DO ESTILO DO ID "msg", QUE CRIAMOS NO HTML  */
+#msg {
+  font-family: monospace;
+}
+
+
+
+
+/* ADICIONANDO UM TEMA CLARO */
+.light-theme {
+  --bg: var(--green);               /*  background */
+  --fontColor: var(--black);        /* cor da fonte */
+  --btnBg: var(--black);           /* cor de fundo do botão que irá alterar o tema */
+  --btnFontColor: var(--white);    /* cor da fonte do botão que irá alterar o tema */
+}
+
+
+
+/* ADICIONANDO UM TEMA ESCURO */
+.dark-theme {
+  --bg: var(--black);              /*  background */
+  --fontColor: var(--green);       /* cor da fonte */
+  --btnBg: var(--white);           /* cor de fundo do botão que irá alterar o tema */
+  --btnFontColor: var(--black);    /* cor da fonte do botão que irá alterar o tema */
+}
+
+
+/* ADICIONANDO UM SELETOR DE BOTÃO, P/ DIFERENCIAR AS CORES DO BOTÃO DAS CORES GERAIS - SUBSTITUIRÁ O SELETOR UNIVERSAL (*) */
+/* (TAMBÉM ESTAREMOS ADICIONANDO UMAS REGRAS RELACIONADAS AO TAMANHO, FORMA, APARÊNCIA E POSIÇÃO DO BOTÃO NA TELA) */
+.btn{
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+/*  ( CRIAMOS UM BOTÃO ARREDONDADO À DIREITA DO TÍTULO DA PÁGINA ) */
+
+.btn:focus {outline-style:none; } /* PARA MELHORAR A APARÊNCIA DO BOTÃO QDO O MESMO É SELECIONADO (RECEBE O FOCO) */

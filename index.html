@@ -1,0 +1,35 @@
+
+<!-- Digite o seguinte texto: "html:5" (isso criará o bloco de cógigo abaixo) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple website</title>       <!-- Abaixo desta linha, digite "link" e tecle ENTER, p/ referenciar o arquivo CSS -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<!-- Aqui escreveremos o código ( corpo do html ) -->
+
+<body class = "light-theme">
+    <h1> Lista de Tarefas </h1>                         <!-- "h1" significa "cabeçalho1" -->
+    <p id = "msg" > Tarefas Atuais: </p>          <!-- "p" significa "parágrafo", e atribuímos um identificador chamado "msg" -->
+    <ul>                                             <!-- "ul" significa: "elemento de lista não ordenada" -->
+        <li class = "list"> Adicionar estilos visuais </li>         <!-- "li" significa um "item de lista" (marcador) -->
+        <li class = "list"> Adicionar temas claros e escuros </li>
+        <li> Habilitar a alternância de temas </li>
+    </ul>
+
+    <div>
+        <button class = 'btn'> Escuro </button>  <!-- Aqui estamos criando um botão p/ alternar entre os temas Escuro e Claro -->
+    </div>
+
+    <!-- Digite o seguinte texto: "script:src" (isso criará o bloco de cógigo abaixo para chamar o arquivo .js) -->
+    <script src="app.js"></script>
+    <!-- OBS: O elemento de script pode ser colocado no <head> ou em outro lugar no <body>. No entanto, colocar o <script>
+    no final da seção <body> permite que todo o conteúdo seja exibido na tela primeiro, carregando o sript em seguida 
+    (isso é útil pois, se houver erros na lógica do arquivo .js, o usuário conseguirá visualizar o conteúdo do site) -->
+    <noscript> Você precisa habilitar o JavaScript para visualizar o site corretamente </noscript>
+</body>
+</html>
